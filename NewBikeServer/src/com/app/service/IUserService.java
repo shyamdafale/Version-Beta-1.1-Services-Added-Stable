@@ -9,7 +9,7 @@ import com.app.pojos.Vendor;
 
 public interface IUserService {
 
-	User loginUserAccount(String u_email,String u_password);
+	User loginUserAccount(String u_email, String u_password);
 
 	User createUserAccount(User u);
 
@@ -22,9 +22,9 @@ public interface IUserService {
 	List<Vendor> getAllVendorShops();
 
 	List<Vendor> getAllVendorShopsBySearch(String search);
-	
+
 	List<Vendor> getVisitVendorShopsBySearch(int ven_id);
-	
+
 	List<Vendor> getTodaysOfferOnShops();
 
 	List<Offer> getTodaysOffers();
